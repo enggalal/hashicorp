@@ -7,7 +7,8 @@ module "tfconfig-functions" {
 }
 
 policy "enforce-mandatory-tags" {
-    enforcement_level = "advisory"
+    #enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ec2-instance-type" {
